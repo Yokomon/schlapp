@@ -27,6 +27,10 @@ router.get('/login', (req, res) => {
     });
 })
 
+router.get("/forum", (req, res)=>{
+    res.sendFile(__dirname + "/forum")
+})
+
 router.get('/dashboard', (req, res) => {
     const user = store.get('user');
     let  { email, username,} = user;

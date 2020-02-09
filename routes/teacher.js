@@ -20,6 +20,9 @@ router.get('/', (req, res) => {
       title: "Lecturer's || Sign Up",
     })
   })
+  router.get("/forum", (req, res)=>{
+    res.render("forum")
+})
   
   router.get('/dashboard', (req, res) => {
     res.render('lecturerDashboard', {
